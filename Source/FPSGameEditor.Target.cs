@@ -8,6 +8,7 @@ public class FPSGameEditorTarget : TargetRules
 	public FPSGameEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		ExtraModuleNames.Add("FPSGame");
-	}
+        DefaultBuildSettings = BuildSettingsVersion.V2;
+        ExtraModuleNames.AddRange(new string[] { "FPSGame" });
+    }
 }
